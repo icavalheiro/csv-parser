@@ -1,0 +1,16 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "prebuild": "rm -rf ./dist",
+    "build": "parcel build --target node ./index.js --public-url /dist --no-source-maps",
+    "watch": "parcel watch --target node ./index.js --public-url /dist",
+    "prestart": "yarn build",
+    "start": "node ./dist/index.js"
+  },
+  "dependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}

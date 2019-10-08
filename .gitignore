@@ -1,0 +1,11 @@
+*.csv
+*.json
+!package.json
+*lock*
+.vscode/
+.vs/
+obj/
+bin/
+.cache/
+node_modules/
+dist/
